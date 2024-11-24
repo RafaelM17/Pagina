@@ -1,0 +1,173 @@
+body  {
+    background: linear-gradient(to right,rgb(0, 0, 0),rgb(61, 61, 61),black);
+   
+    
+}
+h1{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+    
+    
+}
+.no {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    position: fixed;
+    left:  800px;
+    z-index: +1;
+    top: 40px;
+    filter: grayscale(0.5) blur(10px);
+    animation: cann 3s infinite;
+
+
+}
+@keyframes cann {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0); /* Posição inicial */
+    }
+    50% {
+        opacity: 0; /* Invisível durante o "teleporte" */
+    }
+    51% {
+        transform: translateX(20px, 10px); /* Nova posição instantânea */
+    }
+    100% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(20px, 10px); /* Nova posição instantânea */
+    }
+    50% {
+        opacity: 0; /* Invisível durante o "teleporte" */
+    }
+    0% {
+        transform: translate(0, 0); /* Posição inicial */
+    }
+}
+
+.personagem{
+    
+    width: 50%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    position: fixed;
+    right: 550px;
+    margin: -15px;
+    -webkit-filter: drop-shadow(5px 20px 5px #222);
+     filter:drop-shadow(5px 15px 5px black);
+     
+     
+    }
+.divimgs{
+    
+    display: grid;
+    grid-template-rows: repeat(7,550px);
+    grid-template-columns: 550px 550px;
+    gap: 85px;
+    position: absolute;
+    top: 50px;
+    
+    right: 400px;
+    z-index: -1;
+   
+   
+    
+ 
+}
+
+.p ,.d , .t , .q ,.c , .s{
+   
+    width: 100%;
+    height: 100%;
+  
+    box-shadow: 0px 0px 33px  rgb(49, 49, 49);
+    border-radius:25px;
+    
+    
+    padding: 5px;
+} 
+.c , .s{
+    width: 100%;
+    height: 100%;
+  
+    box-shadow: 0px 0px 33px  rgb(49, 49, 49);
+    border-radius:25px;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(12, 12, 12, 0.2));
+    
+    padding: 5px;
+}
+
+
+.glass{
+  
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 400px;
+    height: 850px;
+    bottom: 28px;
+    position: fixed;
+   display: flex;
+   justify-content: center;
+   left: 700px;
+   z-index: -1;
+   border-radius: 100px;
+   box-shadow: 0px 0px 10px rgb(61, 61, 61);
+    
+    animation: sombra 5s infinite  ;
+}
+
+@keyframes sombra {
+    
+    15% {
+        box-shadow: 0px 0px 10px rgb(61, 61, 61);
+    }
+    50% {
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+    15% {
+        box-shadow: 0px 0px 10px rgb(61, 61, 61);
+    }
+    
+}
+
+.skull{
+    opacity: 0.05;
+    
+    position: fixed;
+    right: 5px;
+    width: 15%;
+    
+}
+.footer{
+    background: rebeccapurple;
+    box-shadow: 0px 0px 50px red;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+   
+}
+::-webkit-scrollbar-track {
+   background: rgb(156, 156, 156);
+   opacity: 80%;
+   
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(27, 27, 27) ,  rgb(29, 29, 29) , rgb(39, 39, 39));
+    border-radius: 2px;
+
+}
+
+
